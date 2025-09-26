@@ -1,0 +1,39 @@
+name: flutter_application_1
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # CORRECTED SECTION:
+  # Notice the Firebase packages and cupertino_icons are now aligned
+  # with the 'flutter:' block above, not indented inside it.
+  firebase_core: ^2.31.0
+  firebase_auth: ^4.19.4
+  cloud_firestore: ^4.17.2
+  firebase_messaging: ^14.9.1
+  http: ^1.2.1
+  intl: ^0.19.0
+  syncfusion_flutter_charts: ^26.1.35
+  syncfusion_flutter_gauges: ^26.1.35
+  url_launcher: ^6.3.0
+  webview_flutter: ^4.8.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg

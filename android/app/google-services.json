@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "394471131335",
+    "project_id": "insightfolio-3eaf4",
+    "storage_bucket": "insightfolio-3eaf4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394471131335:android:3e32ca7e121dbc728b56e2",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh2_zYxchEeNdul_JfSt4GV-IkcGnxkBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
