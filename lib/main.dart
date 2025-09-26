@@ -90,8 +90,11 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
     double avgGain = 0, avgLoss = 0;
     for (int i = 1; i <= period; i++) {
       final change = prices[i] - prices[i-1];
-      if (change > 0) avgGain += change;
-      else avgLoss += change.abs();
+      if (change > 0) {
+        avgGain += change;
+      } else {
+        avgLoss += change.abs();
+      }
     }
     avgGain /= period;
     avgLoss /= period;
@@ -214,7 +217,7 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
             padding: EdgeInsets.fromLTRB(20, 8, 20, 8),
             child: Text('My Portfolio', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           ),
-          Expanded(child: const PortfolioList()),
+          const Expanded(child: PortfolioList()),
         ],
       ),
       floatingActionButton: FloatingActionButton(

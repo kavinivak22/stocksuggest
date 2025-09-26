@@ -2,6 +2,11 @@
   command = "flutter build web"
   publish = "build/web"
   functions = "netlify/functions"
+
+# Add this new section to install Flutter during the build
+[[plugins]]
+  package = "netlify-plugin-flutter"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
